@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <img src="pexels-uzunov-rostislav-5011647.jpg" class="brending" alt="">
+        <ul class="nav_menu">
+            <li class="li nav_item">
+                <a href="#" class="nav_link disable">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, alias?</a></li>
+            <li class="li nav_item"><a href="#" class="nav_link">Home</a></li>
+            <li class="li nav_item"><a href="#" class="nav_link">About</a></li>
+            <li class="li nav_item"><a href="#" class="nav_link">Services</a></li>
+            <li class="li nav_item"><a href="#" class="nav_link">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <div class="main">
+        <div class="about">
+            <h1>About myself</h1>
+            <p>My Personal story, characteristics, and background</p>
+        </div>
+        <div class="iconBoxes">
+            <div class="vilogBox commonBoxes">
+                <i class="ri-movie-line"></i>
+                <h2>Vilogs</h2>
+            </div>
+            <div class="researchBox commonBoxes">
+                <i class="ri-article-line"></i>
+                <h2>Research Articles</h2>
+            </div>
+            <div class="qutatiobBox commonBoxes">
+                <i class="ri-double-quotes-r"></i>
+                <h2>Qutations</h2>
+            </div>
+        </div>
+        <div class="imageContent">
+            <img src="pexels-uzunov-rostislav-5011647.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, eligendi.</p>
+            <img src="pexels-uzunov-rostislav-5011647.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, dolor?</p>
+        </div>
+        <div class="imageContent2">
+            <img src="pexels-uzunov-rostislav-5011647.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, dolor?</p>
+            <img src="pexels-uzunov-rostislav-5011647.jpg" alt="">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae, dolor?</p>
+        </div>
+        
+    </div>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav_menu');
+            hamburger.addEventListener('click', ()=>{
+                hamburger.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            })
+            navMenu.addEventListener('click', ()=>{
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            })
+    </script>
+</body>
+</html>
